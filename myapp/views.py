@@ -15,7 +15,6 @@ def display_webpage(request,webid):
     webpages=Webpage.objects.filter(id=webid)
     return render(request,'display_webpage.html', context={'webpages':webpages})
 def search_webpage(request):
-    if request.GET.get('search'):
-        id= request.GET['search']
-        return redirect('display_webpage',webid=id)
-    return render(request,'search_webpage.html')
+
+
+
