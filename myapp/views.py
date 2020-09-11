@@ -14,7 +14,7 @@ def display_webpages(request):
 def display_webpage(request,webid):
     webpages=Webpage.objects.filter(id=webid)
     return render(request,'display_webpage.html', context={'webpages':webpages})
-def search_webpage(request):
+
 
 
 
