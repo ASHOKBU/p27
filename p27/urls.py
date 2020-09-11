@@ -22,5 +22,5 @@ urlpatterns = [
     path('display_topic/<id>/',views.display_topic,name="display_topic"),
     path('display_webpage/', views.display_webpages, name="display_webpage"),
     path('display_webpage/<webid>/', views.display_webpage, name="display_webpage"),
-    path('search_web/',views.search_webpage, name="search_web"),
 ]
+
